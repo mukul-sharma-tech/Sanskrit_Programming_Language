@@ -1,0 +1,19 @@
+
+# Recursive factorial function
+कार्यम् भाज्यम्(n) {
+    यदि (n <= 1) {
+        प्रतिफलम् 1;
+    }
+    
+    प्रतिफलम् n * भाज्यम्(n - 1);
+}
+
+# Main entry point of the program
+कार्यम् मुख्य() {
+    स्थापय संख्या = 5;
+    स्थापय परिणाम = भाज्यम्(संख्या);
+    
+    लेखय(परिणाम); # Expected output: 120
+    
+    प्रतिफलम् 0; # Return 0 from main
+}
